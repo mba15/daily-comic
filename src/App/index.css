@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(213, 238, 232);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 500;
+}
+.navbar{
+    margin: 30px;
+    color: rgba(31, 29, 29, 0.959);
+}
+.navlink{
+    margin: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.navlink:visited {
+    color:  rgba(31, 29, 29, 0.959);
+}
+.navlink:hover {
+    color: white;
+}
+
+.header{
+    height: 160px;
+    border-bottom: 1px solid grey;
+    text-align: center;
+    margin: 40px;
+    color: rgba(31, 29, 29, 0.959);
+    font-size: 48px;
+}
+
+.comic, .randomComic, .selectComic{
+    text-align: center;
+    margin: 50px;
+}
+.button, .input{
+    margin: 10px;
+}
+button:hover {
+    background-color: white;
+}
+.input:hover {
+    background-color: white;
+}
+
+
+.footer {
+    border-top: 1px solid grey;
+    text-align: center;
+    margin: 30px;
+    height: 110px;
+}
