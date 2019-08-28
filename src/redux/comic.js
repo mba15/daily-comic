@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const dailyComicUrl = "http://cors.vschool.io?url=https://xkcd.com/info.0.json";
+const dailyComicUrl = "https://cors-anywhere.herokuapp.com/https://xkcd.com/info.0.json";
 
 export const getComic = () => {
     return (dispatch) => {
@@ -22,7 +22,7 @@ export const getRandomComic = () => {
                 const data = response.data;
                 const num = data.num;
                 const randomNum = Math.floor(Math.random() * num);
-                const randomUrl = "http://cors.vschool.io?url=https://xkcd.com/" + randomNum + "/info.0.json";
+                const randomUrl = "https://cors-anywhere.herokuapp.com/https://xkcd.com/" + randomNum + "/info.0.json";
                 return axios.get(randomUrl)                    
             })
             .then((response) => {
@@ -36,7 +36,7 @@ export const getRandomComic = () => {
 }
 
 export const getSelectComic = (num) => {
-    const selectUrl = "http://cors.vschool.io?url=https://xkcd.com/" + num + "/info.0.json";
+    const selectUrl = "https://cors-anywhere.herokuapp.com/https://xkcd.com/" + num + "/info.0.json";
     return (dispatch) => {
         axios.get(selectUrl)
         .then((response) => {
